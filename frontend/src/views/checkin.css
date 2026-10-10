@@ -1,0 +1,52 @@
+/* Weekly check-in — NOVI theme additions (summary, stats, CTA, nested planner) */
+
+.ck-novi { margin-bottom: 18px; display: flex; align-items: flex-start; gap: 4px; }
+.ck-novi .novi-avatar { flex: 0 0 28px; margin-right: 10px; }
+.ck-novi-copy b { font-size: 13px; letter-spacing: 0.02em; }
+.ck-novi-copy p { margin: 4px 0 0; font-size: 15px; color: var(--text); line-height: 1.5; }
+
+.ck-summary {
+  margin-top: 30px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+.ck-summary-head { display: flex; align-items: flex-start; gap: 12px; }
+.ck-summary-head .novi-avatar { flex: 0 0 34px; width: 34px; height: 34px; font-size: 17px; }
+.ck-summary-head h2 { font-family: var(--font-display); font-weight: 400; font-size: 27px; letter-spacing: -0.5px; margin: 0; color: var(--text); }
+.ck-summary-head p { margin: 6px 0 0; font-size: 13px; color: var(--muted); line-height: 1.5; max-width: 720px; }
+
+.ck-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 22px 0; }
+@media (max-width: 760px) { .ck-stats { grid-template-columns: repeat(2, 1fr); } }
+.ck-stat { background: var(--panel-2); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 16px; }
+.ck-stat b {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 34px;
+  line-height: 1;
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.ck-stat span { display: block; margin-top: 6px; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+
+.ck-cta {
+  background: var(--grad);
+  color: #0a0d14;
+  border: 0;
+  border-radius: var(--radius-sm);
+  padding: 12px 22px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: inherit;
+  box-shadow: var(--glow);
+  transition: filter 0.16s ease, transform 0.1s ease;
+}
+.ck-cta:hover { filter: brightness(1.06); }
+.ck-cta:active { transform: translateY(1px); }
+
+.ck-planner { margin-top: 30px; }

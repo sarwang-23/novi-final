@@ -1,0 +1,102 @@
+# ---------------------------------------------------------------------------
+# Secrets & environment files - NEVER commit
+# ---------------------------------------------------------------------------
+.env
+.env.*
+*.env
+*.env.local
+*.env.production
+.envrc
+.direnv/
+!.env.example
+!*.env.example
+!.env.test
+
+# ---------------------------------------------------------------------------
+# FUSE / merged-filesystem ghost artifacts (common on this host)
+# ---------------------------------------------------------------------------
+.fuse_hidden*
+*.fuse_hidden*
+
+# ---------------------------------------------------------------------------
+# Node / frontend
+# ---------------------------------------------------------------------------
+node_modules/
+frontend/node_modules/
+*.tsbuildinfo
+*.eslintcache
+.eslintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+frontend/.next/
+frontend/.next.ghost/
+frontend/.next.old/
+frontend/.next.prod/
+frontend/out/
+frontend/dist/
+frontend/coverage/
+frontend/public/uploads/
+
+# ---------------------------------------------------------------------------
+# Python / backend
+# ---------------------------------------------------------------------------
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+.eggs/
+*.py[cod]
+*$py.class
+__pycache__/
+*.sqlite3
+.db/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.manifest
+*.spec
+.python-version
+
+# ---------------------------------------------------------------------------
+# Runtime data & logs
+# ---------------------------------------------------------------------------
+*.log
+logs/
+data/
+data/*
+!data/.gitkeep
+pgdata/
+pg_log/
+storage/
+tmp/
+*.pid
+*.seed
+*.pid.lock
+
+# ---------------------------------------------------------------------------
+# IDE & OS
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.orig
+*.rej
+
+# ---------------------------------------------------------------------------
+# Docker / local services
+# ---------------------------------------------------------------------------
+pgdata/
+letsencrypt/
+certbot/
